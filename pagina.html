@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio Congelados - Página de Vendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f2ef;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #cc624e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 1rem 0 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+            height: 400px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            padding-bottom: 3rem; /* Espaço reservado para o botão */
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px; /* Altura padrão para todas as imagens */
+            object-fit: contain; /* Mantém a proporção da imagem */
+            background-color: #f0f0f0; /* Fundo para imagens menores */
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .product-card .details {
+            padding: 1rem;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .product-card h2 {
+            margin: 0.5rem 0;
+            font-size: 1.25rem;
+            color: #cc624e;
+        }
+
+        .product-card p {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+
+        .product-card a {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 2rem);
+            padding: 0.75rem;
+            background-color: #e6955e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .product-card a:hover {
+            background-color: #d9844d;
+        }
+
+        footer {
+            background-color: #cc624e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Julio Congelados</h1>
+        <p>Comida prática, saborosa e fresquinha. Entregas exclusivas para Belo Horizonte e região!</p>
+    </header>
+
+    <main>
+        <!-- Exemplo de produto -->
+        <div class="product-card">
+            <img src="tradicional.jpg" alt="Nome do Produto">
+            <div class="details">
+                <h2>Pao de queijo Tradicional</h2>
+                <p>R$ 25,00</p>
+                <a href="https://wa.me/5531973521576?text=Ol%C3%A1!%20Julio%20Congelados%20Gostaria%20de%20saber%20mais%20sobre%20os%20congelados." target="_blank">Comprar pelo WhatsApp</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="empanado.jpg" alt="Nome do Produto">
+            <div class="details">
+                <h2>Pao de queijo Empanado</h2>
+                <p>R$ 33,00</p>
+                <a href="https://wa.me/5531973521576?text=Ol%C3%A1!%20Julio%20Congelados%20Gostaria%20de%20saber%20mais%20sobre%20os%20congelados." target="_blank">Comprar pelo WhatsApp</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="recheadoGoiabada.jpg" alt="Nome do Produto">
+            <div class="details">
+                <h2>Pães de Queijo Recheados - Requeijão, Frango ou Goiabada: Sabor em Cada Mordida!</h2>
+                <p>R$ 33,00</p>
+                <a href="https://wa.me/5531973521576?text=Ol%C3%A1!%20Julio%20Congelados%20Gostaria%20de%20saber%20mais%20sobre%20os%20congelados." target="_blank">Comprar pelo WhatsApp</a>
+            </div>
+        </div>
+        <!-- Adicione mais produtos aqui seguindo o mesmo padrão -->
+    </main>
+
+    <footer>
+        <p>© 2024 Julio Congelados. Todos os direitos reservados.</p>
+        <p>Contato: <a href="https://wa.me/5531973521576" style="color: white; text-decoration: underline;">31 97352-1576</a></p>
+    </footer>
+</body>
+</html>
